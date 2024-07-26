@@ -1,26 +1,20 @@
 package Interfaces;
 
-public class KFC implements Company, FoodProvider {
-
-    private static int numberOfRestaurants;
-
+public class KFC implements FoodProvider, Company {
+    public static int numberOfRestaurants;
     private int numberOfEmployees;
-
     private int uniqueId;
-
     private double balance;
-
     private int deliverdQuantity;
-
     public static int getNumberOfRestaurants(){
         return numberOfRestaurants;
     }
+
     public void resetMonth() {
         this.balance = 0;
         this.deliverdQuantity = 0;
-
+        numberOfRestaurants++;
     }
-
 
     @Override
     public int getNumberOfEmployees() {
@@ -35,7 +29,6 @@ public class KFC implements Company, FoodProvider {
     @Override
     public void hire(String person) {
         this.numberOfEmployees++;
-
     }
 
     @Override

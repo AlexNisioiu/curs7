@@ -1,27 +1,21 @@
 package Interfaces;
 
 public class McDonalds implements Company, FoodProvider {
-
     private int numberOfEmployees;
-
     private int uniqueId;
-
     private double balance;
-
     private int deliverdQuantity;
 
-
     public int getNumberOfEmployees() {
-        return 0;
+        return this.numberOfEmployees;
     }
 
     public int getUniqueId() {
-        return 0;
+        return this.uniqueId;
     }
 
     public void hire(String person) {
         this.numberOfEmployees++;
-
     }
 
     public boolean pay(double amount) {
@@ -39,7 +33,6 @@ public class McDonalds implements Company, FoodProvider {
     }
 
     public int getDeliveredQuantity() {
-
         return this.deliverdQuantity;
     }
 }

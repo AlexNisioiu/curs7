@@ -3,11 +3,10 @@ package secondPackage;
 import firstPackage.Animal;
 
 public class Cat extends Animal {
-
-    public void oneMethod(){
-        Animal a = new Animal();
-
+    public int numberOfLegs;
+    public void cat(String[] args) {
+        this.protectedField = 5;
+        this.publicField = 10;
 
     }
-
 }

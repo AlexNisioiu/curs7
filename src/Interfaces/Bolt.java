@@ -1,6 +1,6 @@
 package Interfaces;
 
-public class Bolt implements Company {
+public class Bolt implements Company{
     @Override
     public int getNumberOfEmployees() {
         return 0;
